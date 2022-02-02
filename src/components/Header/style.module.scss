@@ -1,0 +1,160 @@
+@import '../../styles';
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+
+	.logo {
+		height: 1.5rem;
+		overflow: hidden;
+
+		&-img {
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	.nav-links {
+		display: flex;
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		list-style: none;
+
+		@include tablet {
+			display: none;
+		}
+
+		@include mobile {
+			display: none;
+		}
+
+		li {
+			cursor: pointer;
+			transition-duration: 300ms;
+
+			&:hover {
+				opacity: 0.6;
+			}
+
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.cta-container {
+		display: flex;
+
+		@include tablet {
+			flex: 1;
+			align-items: center;
+			justify-content: center;
+		}
+
+		@include mobile {
+			display: none;
+		}
+
+		.cta {
+			padding: 0 1rem;
+			border-right: solid 1px $white;
+
+			&:last-of-type {
+				border-right: 0;
+			}
+
+			a {
+				color: $white;
+				text-decoration: none;
+				padding-bottom: 0.25rem;
+				transition-duration: 300ms;
+
+				&:hover {
+					border-bottom: 1px solid $golden;
+				}
+			}
+		}
+	}
+
+	.hamburger {
+		display: none;
+		height: 1rem;
+		overflow: hidden;
+		cursor: pointer;
+
+		@include tablet {
+			display: block;
+		}
+
+		@include mobile {
+			display: block;
+		}
+
+		.icon {
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
+.overlay {
+	position: fixed;
+	inset: 0;
+	background-color: $bg-color;
+	z-index: 999;
+	place-items: center;
+	transition-duration: 300ms;
+	display: grid;
+	visibility: hidden;
+	opacity: 0;
+
+	.nav-links {
+		display: grid;
+		gap: 2rem;
+		list-style: none;
+		font-family: var(--base-font);
+		font-size: 2rem;
+		color: $golden;
+		text-align: center;
+
+		li {
+			transition-duration: 300ms;
+
+			&:hover {
+				color: $white;
+			}
+
+			a {
+				color: unset;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.close-container {
+		position: absolute;
+		top: 1rem;
+		right: 2rem;
+		height: 2rem;
+		overflow: hidden;
+		cursor: pointer;
+
+		.close {
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&.visible {
+		visibility: visible;
+		opacity: 1;
+	}
+}
