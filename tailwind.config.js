@@ -18,6 +18,7 @@ module.exports = {
       white: colors.white,
       golden: "#dcca87",
       darkGray: "#0c0c0c",
+      crimson: "#f5efdb",
     }),
     columns: {
       auto: "auto",
@@ -361,7 +362,8 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
-      cormorant: ["Cormorant", "serif"],
+      cormorant: ["Cormorant Upright", "serif"],
+      open: ["Open Sans", "sans-serif"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],

@@ -33,18 +33,21 @@ const Header = () => {
 
   return (
     <>
-      <nav className="flex items-center justify-between py-4 px-8">
-        <div className="h-6 overflow-hidden">
+      <nav className="flex items-center justify-between p-4 md:px-8 md:py-4">
+        <div className="h-5 overflow-hidden md:h-6 lg:h-7">
           <img src={logo} className="h-full w-full object-contain" alt="" />
         </div>
 
-        <ul className="hidden flex-1 list-none items-center justify-center gap-4 lg:flex">
+        <ul className="hidden flex-1 list-none items-center justify-center gap-8 lg:flex">
           {navLinks?.map(({ id, label }, index) => (
             <li
               key={index}
               className="cursor-pointer duration-300 hover:opacity-60"
             >
-              <a href={id} className="text-white no-underline">
+              <a
+                href={id}
+                className="font-open tracking-wider text-white no-underline"
+              >
                 {label}
               </a>
             </li>
@@ -55,7 +58,7 @@ const Header = () => {
           <div className="border-r border-solid border-white px-4">
             <a
               href={void 0}
-              className="border-solid border-golden p-1 text-white no-underline duration-300 hover:border-b"
+              className="border-solid border-golden p-1 font-open tracking-wider text-white no-underline duration-300 hover:border-b"
             >
               Log In / Registration
             </a>
@@ -64,7 +67,7 @@ const Header = () => {
           <div className="px-4">
             <a
               href={void 0}
-              className="border-solid border-golden p-1 text-white no-underline duration-300 hover:border-b"
+              className="border-solid border-golden p-1 font-open tracking-wider text-white no-underline duration-300 hover:border-b"
             >
               Book Table
             </a>
@@ -84,7 +87,7 @@ const Header = () => {
       </nav>
 
       <div
-        className={`fixed  inset-0 z-50 grid place-items-center bg-darkGray ${
+        className={`fixed inset-0 z-50 grid place-items-center bg-darkGray ${
           isOverlayVisible ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
