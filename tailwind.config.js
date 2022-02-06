@@ -19,6 +19,7 @@ module.exports = {
       golden: "#dcca87",
       darkGray: "#0c0c0c",
       crimson: "#f5efdb",
+      grey: "#aaa",
     }),
     columns: {
       auto: "auto",
@@ -121,6 +122,7 @@ module.exports = {
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl":
         "linear-gradient(to top left, var(--tw-gradient-stops))",
+      image: "url(/src/assets/images/bg.svg)",
     },
     backgroundOpacity: ({ theme }) => theme("opacity"),
     backgroundPosition: {
@@ -133,6 +135,7 @@ module.exports = {
       "right-bottom": "right bottom",
       "right-top": "right top",
       top: "top",
+      50: "50%",
     },
     backgroundSize: {
       auto: "auto",
