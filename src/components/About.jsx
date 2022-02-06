@@ -15,7 +15,7 @@ const About = () => {
 
       <div className="flex flex-col items-center justify-center lg:flex-row">
         <div className="flex w-full flex-1 flex-col items-end justify-end text-right">
-          <h1 className="font-cormorant text-6xl capitalize tracking-wider text-golden lg:text-7xl">
+          <h1 className="font-cormorant text-6xl font-bold capitalize tracking-wider text-golden lg:text-7xl">
             About Us
           </h1>
 
@@ -37,7 +37,7 @@ const About = () => {
         </div>
 
         <div className="flex w-full flex-1 flex-col items-start justify-start text-left">
-          <h1 className="font-cormorant text-6xl capitalize tracking-wider text-golden lg:text-7xl">
+          <h1 className="font-cormorant text-6xl font-bold capitalize tracking-wider text-golden lg:text-7xl">
             Our History
           </h1>
 
