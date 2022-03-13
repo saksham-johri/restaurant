@@ -7,8 +7,7 @@ const Menu = () => {
 	return (
 		<section
 			id='menu'
-			className='flex flex-col items-center justify-center py-16 px-8 md:p-16 lg:px-24'
-		>
+			className='flex flex-col items-center justify-center py-16 px-8 md:p-16 lg:px-24'>
 			<div className='mb-8 text-center'>
 				<div className='mb-4 flex flex-col items-center'>
 					<p className='font-cormorant text-2xl capitalize'>
@@ -73,7 +72,7 @@ const RenderItem = ({ name, price, label }) => (
 			<div className='mx-4 h-[1px] w-20 bg-golden' />
 
 			<div className='flex items-end justify-end'>
-				<p className='font-cormorant text-xl font-bold capitalize lining-nums tracking-wider  md:text-2xl'>
+				<p className='font-cormorant text-xl font-bold capitalize lining-nums tracking-wider md:text-2xl'>
 					${price}
 				</p>
 			</div>

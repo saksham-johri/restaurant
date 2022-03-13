@@ -1,15 +1,13 @@
-import React from 'react';
-import spoon from '../../assets/images/spoon.svg';
 import g from '../../assets/images/g.svg';
 import knife from '../../assets/images/knife.svg';
+import spoon from '../../assets/images/spoon.svg';
 import Button from '../Button';
 
 const About = () => {
 	return (
 		<section
 			id='about'
-			className='bg-image bg-cover bg-fixed bg-50 bg-repeat py-16 px-8 md:p-16 lg:px-24'
-		>
+			className='bg-image bg-cover bg-fixed bg-50 bg-repeat py-16 px-8 md:p-16 lg:px-24'>
 			<div className='absolute inset-0 flex items-center justify-center'>
 				<img src={g} alt='' className='h-80 w-4/5 object-contain md:w-80' />
 			</div>

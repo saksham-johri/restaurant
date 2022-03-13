@@ -1,14 +1,12 @@
-import React from 'react';
-import spoon from '../../assets/images/spoon.svg';
 import banner from '../../assets/images/banner.svg';
+import spoon from '../../assets/images/spoon.svg';
 import Button from '../Button';
 
 const Home = () => {
 	return (
 		<section
 			id='home'
-			className='flex flex-col items-center justify-center gap-20 py-16 px-8 md:p-16 lg:min-h-screen lg:flex-row lg:px-24'
-		>
+			className='flex flex-col items-center justify-center gap-20 py-16 px-8 md:p-16 lg:min-h-screen lg:flex-row lg:px-24'>
 			<div>
 				<div className='mb-4'>
 					<p className='font-cormorant text-lg font-bold capitalize leading-8 tracking-wider md:text-2xl'>
