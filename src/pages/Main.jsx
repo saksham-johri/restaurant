@@ -10,7 +10,7 @@ const Menu = lazy(() => import('../components/sections/Menu'));
 
 const Main = () => {
 	return (
-		<Suspense fallback={() => {}}>
+		<Suspense fallback={<></>}>
 			<Home />
 
 			<About />

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import close from '../assets/images/close.png';
 import hamburger from '../assets/images/hamburger.png';
 import logo from '../assets/images/logo.svg';
@@ -28,6 +28,16 @@ const navLinks = [
 
 const Header = () => {
 	const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+
+	useEffect(() => {
+		window.addEventListener('popstate', () => {
+			setIsOverlayVisible(false);
+		});
+
+		return () => {
+			window.removeEventListener('popstate', () => {});
+		};
+	}, []);
 
 	return (
 		<>
